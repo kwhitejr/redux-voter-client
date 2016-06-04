@@ -11,6 +11,9 @@ module.exports = {
       test: /\.jsx?$/,
       exclude: /node_modules/,
       loader: 'react-hot!babel'
+    }, {
+      test: /\.css$/,
+      loader: 'style!css!babel'
     }]
   },
   resolve: {
@@ -27,5 +30,8 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin()
-  ]
+  ],
+  postcss: function () {
+    return [autoprefixer];
+  }
 };
