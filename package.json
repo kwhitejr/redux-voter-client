@@ -42,6 +42,7 @@
   },
   "dependencies": {
     "autoprefixer": "^6.3.6",
+    "classnames": "^2.2.5",
     "immutable": "^3.8.1",
     "object-assign": "^4.1.0",
     "react": "^15.1.0",
