@@ -23,7 +23,7 @@ const createStoreWithMiddleware = applyMiddleware(
   remoteActionMiddleware(socket)
 )(createStore);
 const store = createStoreWithMiddleware(reducer);
-store.dispatch(setClientId(getClientId));
+store.dispatch(setClientId(getClientId()));
 
 const routes = <Route component={App}>
                 <Route path="/results" component={ResultsContainer} />
